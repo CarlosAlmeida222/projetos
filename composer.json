@@ -1,0 +1,16 @@
+{
+  "name": "projeto/gerenciamento-usuarios",
+  "description": "Sistema de gerenciamento de usuários e perfis para ambiente LAMP.",
+  "type": "project",
+  "require": {
+    "php": "^8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/App/"
+    }
+  },
+  "scripts": {
+    "start": "docker compose up -d --build"
+  }
+}
