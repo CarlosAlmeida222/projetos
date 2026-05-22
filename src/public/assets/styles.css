@@ -1,0 +1,45 @@
+:root {
+    color-scheme: light;
+}
+body {
+    min-height: 100vh;
+}
+.dashboard-shell {
+    min-height: 100vh;
+}
+.dashboard-sidebar {
+    width: 260px;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.dashboard-content {
+    min-height: 100vh;
+}
+.navbar .btn-outline-secondary {
+    border-color: #dfe3e8;
+}
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+.alert-fade {
+    animation: fadeAlert 4s ease forwards;
+}
+@keyframes fadeAlert {
+    0% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; height: 0; padding: 0; margin: 0; overflow: hidden; }
+}
+@media (max-width: 991px) {
+    .dashboard-shell {
+        flex-direction: column;
+    }
+    .dashboard-sidebar {
+        width: 100%;
+        position: relative;
+    }
+}
